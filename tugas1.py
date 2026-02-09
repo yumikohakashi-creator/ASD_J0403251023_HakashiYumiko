@@ -2,9 +2,9 @@
 # TUGAS HANDS-ON MODUL 1
 # Studi Kasus: Sistem Stok Barang Kantin (Berbasis File .txt)
 #
-# Nama :
-# NIM :
-# Kelas :
+# Nama : Hakashi Yumiko Masfat
+# NIM : J0403251023
+# Kelas : TPL A2
 # ==========================================================
 # -------------------------------
 # Konstanta nama file
@@ -24,15 +24,19 @@ def baca_stok(nama_file):
     value = {"nama": nama_barang, "stok": stok_int}
     """
     stok_dict = {}
-    # TODO: Buka file dan baca seluruh baris
-    # Hint: with open(nama_file, "r", encoding="utf-8") as f:
-    # TODO: Untuk setiap baris:
-    # - gunakan strip() untuk menghilangkan \n
-    # - split(",") untuk memisahkan kolom
-    # - simpan ke dictionary
+    if not os.path.exists(nama_file):#Buka file dan baca seluruh baris
+        with open(nama_file, "r", encoding="utf-8") as f:
+            pass
+        return stok_dict
+    with open(nama_file,"r", encoding="utf-8") as f:
+        for baris in f: #Untuk setiap baris
+            baris = baris.strip() #untuk menghilangkan \n
+            if baris: 
+                kode,nama, stok =baris.split(",") #untuk memisahkan kolom
+                stok_dict[kode]= {"nama": nama, "stok": int(stok)} #simpan ke dictionary
     return stok_dict
 
-# -------------------------------
+# -------------------------------a
 # Fungsi: Menyimpan data ke file
 # -------------------------------
 def simpan_stok(nama_file, stok_dict):
@@ -50,10 +54,17 @@ def tampilkan_semua(stok_dict):
     """
     Menampilkan semua barang di stok_dict.
     """
-    # TODO: Jika kosong, tampilkan pesan stok kosong
-    # TODO: Tampilkan dengan format rapi: kode | nama | stok
+    if not stok_dict:
+        print("\n[!] stok barang masih kosong")
     pass
-
+    print("\n" + "=" *40)
+    print(f"{'KODE': <10} | {'NAMA BARANG': <15} | {'STOK': >5}")
+    print("-"*40)
+    for kode in sorted(stok_dict):
+        nama = stok_dict[kode]["nama"]
+        stok = stok_dict[kode]["stok"]
+        print(f"{kode:<10} | {nama: <15} | {stok: >5}")
+    print("="*40)
 # -------------------------------
 # Fungsi: Cari barang berdasarkan kode
 # -------------------------------
