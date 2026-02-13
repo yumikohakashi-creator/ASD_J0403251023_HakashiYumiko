@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ###Latihan	3:	Implementasikan	Pencarian pada	node tertentu Double Linked	List.	
 
 class Node:
@@ -84,5 +83,4 @@ if __name__ == "__main__":
     cari = int(input("masukkan elemen yang ingin dicari: "))
     dll.search_element(cari)
 
->>>>>>> fb56a9a082b4097cf1a3e89f16cdec777009f857
     
