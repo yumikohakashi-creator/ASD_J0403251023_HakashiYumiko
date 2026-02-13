@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ###Latihan	5:	Tambahkan	metode	untuk	membalik (reverse) sebuahsin gle linked	list tanpa	membuat	linked list baru.	
 
 class Node:
@@ -96,6 +95,3 @@ if __name__ == "__main__":
     llist.reverse()
     print("linked list setelah dibalik: ", end="")
     llist.print_list()
-
-    
->>>>>>> fb56a9a082b4097cf1a3e89f16cdec777009f857
