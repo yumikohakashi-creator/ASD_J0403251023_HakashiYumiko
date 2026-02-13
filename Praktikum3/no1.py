@@ -1,4 +1,4 @@
-#<<<<<<< HEAD
+
 ###Latihan	1:	Implementasikan	fungsi untuk menghapus node	dengan	nilai tertentu.
 
 class Node:
@@ -59,6 +59,7 @@ if __name__ == "__main__":
 
     print("\nisi linked list setelah penghapusan: ")
     llist.print_list()
+<<<<<<< HEAD
 #=======
 ###Latihan	1:	Implementasikan	fungsi untuk menghapus node	dengan	nilai tertentu.
 
@@ -120,3 +121,5 @@ if __name__ == "__main__":
 
     print("\nisi linked list setelah penghapusan: ")
     llist.print_list()
+=======
+>>>>>>> b2779e3db0ba7bca3bbe78daddca4b3bb310ec96
