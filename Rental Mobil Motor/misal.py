@@ -1,1 +1,0 @@
-# ini aku anuin dulu yap, nyoba
