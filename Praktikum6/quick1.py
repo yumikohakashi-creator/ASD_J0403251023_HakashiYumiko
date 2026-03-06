@@ -32,4 +32,3 @@ quickSort(data)
 print(data)
 
 #ascending
-#tandanya <=

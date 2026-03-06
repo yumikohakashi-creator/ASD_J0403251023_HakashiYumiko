@@ -1,3 +1,9 @@
+###################################
+# Nama: Hakashi Yumiko Masfat
+# NIM : J0403251023
+# Kelas : TPL A2
+###################################
+
 def sequential_filter(data, X):
     sama_dengan_X = []
     lebih_besar_X = []

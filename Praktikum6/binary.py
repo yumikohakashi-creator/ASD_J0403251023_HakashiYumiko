@@ -1,5 +1,5 @@
 #1. Mengembalikan posisi (indeks) pertama dari nilai yang dicari pada list.
-# Apabila nilai tidak ditemukan, kembalikan-1.
+# apabila nilai tidak ditemukan, kembalikan-1.
 
 def binarySearchIndex(data, item):
     data.sort() 

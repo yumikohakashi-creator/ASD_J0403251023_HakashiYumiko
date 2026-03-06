@@ -30,7 +30,6 @@ def partition(data, first, last):
     return rightmark
 data = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 quickSort(data)
-print("Final Result (Descending):", data)
+print(data)
 
 #descending
-#tandanya >=
