@@ -1,0 +1,10 @@
+B001,RStudio for baby,150000
+B002,Memahami logika login dalam 5 menit,200000
+B003,Alasan kenapa harus masuk TPL,250000
+B004,Anak SNBP bisa ikut UTBK?,180000
+B005,Menguasai minimal 5 bahasa pemograman,320000
+B006,Jurusan IT bisa jadi content creator?,301000
+B007,Tips lulus 4 Tahun dari TPL dengan IPK 4,1000000
+B008,Makanan ini bikin kamu jago ngoding,205000
+B009,Jurusan yang ga bakal disesalin pemilihnya,130000
+B010,Standar kebahagiaan programer,80000
